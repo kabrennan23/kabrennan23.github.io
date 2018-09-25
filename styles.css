@@ -1,14 +1,39 @@
 body {
-	background: black;
-	color: pink;
-	font-family: futura, helvetica, sans-serif;
+	background: url(https://images.fineartamerica.com/images-medium-large/old-memories-black-and-white-abstract-art-by-laura-gomez-square-size-laura-and-karina-gomez.jpg);
+	background-size: 100%;
+	color: red;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
 	text-align: center;
+}
+
+h1{
+	font-weight: 700;
+	font-size: 75px;
+	text-shadow: 5px 5px rgb(0,0,0);
+}
+
+p {
+	font-weight: 700;
+	font-size: 30px;
+	text-shadow: 1px 1px rgb(0,0,0);
 }
 
 li {
-  list-style: none;
+ 	list-style: none;
 }
 
 ul {
+	font-size: 20px;
+	font-weight: 400;
+	text-shadow: 1px 1px rgb(0,0,0);
 	text-align: center;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: gray;
 }
