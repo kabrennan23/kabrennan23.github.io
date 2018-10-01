@@ -1,0 +1,73 @@
+h1 {
+	font-family: helvetica, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	background: rgb(9 202 159);
+	color: white;
+	text-align: center;
+	padding: 20px 20px;
+	margin: 15px 5px;
+}
+
+.nav {
+	background: white;
+	color: rgb(33 33 33);
+	font-family: helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 25px;
+	text-align: center;
+}
+
+.ul {
+	list-style: none;
+	display: inline;
+	padding: 0 10px 0 10px;
+}
+
+.a {
+	color: black;
+  	text-decoration: none;
+}
+
+h2 {
+	text-align: center;
+	font-family: helvetica, sans-serif;
+	margin: 10px 10px;
+}
+
+.image {
+	height: 175px;
+	display: block;
+    margin: auto;
+}
+
+.maui {
+	background: rgb(174, 210, 250);
+	padding: 5px 25px 25px 25px;
+	margin: 10px 5px 30px 5px;
+}
+
+.reykjavik {
+	background: rgb(192, 242, 227);
+	padding: 5px 25px 25px 25px;
+	margin: 10px 5px 30px 5px;
+}
+
+.aspen {
+	background: rgb(196, 222, 252);
+	padding: 5px 25px 25px 25px;
+	margin: 10px 5px 30px 5px;
+}
+
+.section-text {
+	font-family: helvetica, sans-serif;
+	font-size: 13px;
+	text-align: left;
+	color: black;
+}
+
+.footer {
+	background: white;
+	margin: 15px;
+}
