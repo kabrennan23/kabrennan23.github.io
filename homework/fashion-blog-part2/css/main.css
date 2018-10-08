@@ -1,0 +1,149 @@
+body {
+	margin: 0;
+}
+
+.container {
+	color: #444444;
+    font-family: "Lato";
+    line-height: 1.5;
+	padding: 54px;
+	width: 1080px;
+	margin: auto;
+}
+
+header h1, header h2 {
+	display: inline-block;
+	margin: 0;
+}
+
+h1 {
+	color: #d00;
+	font-weight: 500;
+	font-size: 50px;
+}
+
+h2 {
+	color: #000;
+	font-weight: 400;
+	font-size: 28px;
+}
+
+h3 {
+	color: #cccccc;
+	font-weight: 400;
+	font-size: 39px;
+	margin: 50px 0 0px 0;
+}
+
+h4 {
+	color: #000;
+	font-weight: 400;
+	font-size: 39px;
+	margin: 0 0 10px 0;
+}
+
+h5 {
+	color: #888;
+	font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0 10px 0;
+}
+
+nav {
+	background: black;
+	display: inline-block;
+	margin: auto;
+	padding: 15px;
+	width: 1080px;
+}
+
+nav a {
+	color: white;
+	font-size: 20px;
+	margin: auto;
+	padding: 45px;
+	text-decoration: none;
+}
+
+section {
+	float: left;
+	width: 700px;
+}
+
+a:links {
+	color: #ddo;
+}
+
+a:hover {
+	color: #a00;
+}
+
+p {
+	color: #000;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+article {
+	color: #000;
+	font-weight: 400;
+}
+
+/*
+.subhead::first-letter {
+	  initial-letter: 4;
+	  color: #cccccc;
+	  font-size: 108px;
+	  line-height: 1;
+}
+*/
+
+article p:first-letter {
+	float: left;
+	font-size: 108px;
+    line-height: 1;
+    color: #cccccc;
+}
+
+aside {
+	float: right;
+	width: 300px;
+	margin: 15px 0 15px 0;
+}
+
+.continues {
+	color: #dd0000;
+	font-weight: bold;
+	text-align: right ;
+	padding: 10px 0 10px 0;
+	text-decoration: none;
+}
+
+.line {
+	border-bottom: solid 2px #dddddd;
+	padding: 0 0 25px 0;
+}
+
+.copyright {
+	color: #bbbbbb;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+a.popular-posts {
+	color: #dd0000;
+	text-decoration: none;
+}
+
+nav-footer a {
+	padding-right: 5px;
+	color: #dd0000;
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: none;
+	border-right: solid 2px #dddddd;
+}
+
+footer {
+	clear: both;
+}
