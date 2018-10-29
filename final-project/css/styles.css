@@ -20,41 +20,55 @@ h2 {
 	font-size: 18px;
 	text-align: left;
 	margin-top: 0px;
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 	margin-left: 235px;
 }
 
-h3 {
+.nav-links {
 	font-family: 'Quicksand', sans-serif;
-	color: black;
 	font-size: 35px;
 	text-align: right;
-	margin: 7px;
+	/*margin: 12px;*/
 	padding-left: 200px;
-	padding-right: 10px;
+	/*padding-right: -8px;*/
+	text-decoration: none;
 }
 
-h3.bio {
+.nav-links:hover {
+    color: black;
+}
+
+img {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+img:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.bio {
 	color: #ED3987;
 }
 
-h3.resume {
+.resume {
 	color: #53A3D9;
 }
 
-h3.work {
+.work {
 	color: #EA2229;
 }
 
-h3.skills {
+.skills {
 	color: #65308F;
 }
 
-h3.blog {
+.blog {
 	color: #0C9447;
 }
 
-h3.contact {
+.contact {
 	color: #F69322;
 }
 
@@ -72,7 +86,7 @@ h3.contact {
 	justify-content: flex-end;
 	left: 18px;
     position: relative;
-    /*right: -20px;*/
+    right: -20px;
 }
 
 .fa {
