@@ -1,7 +1,9 @@
 
 body {
 	background-color: white;
-	margin-top: 50px;
+	margin: 0;
+	box-sizing: border-box;
+	/*margin-top: 50px;*/
 }
 
 h1 {
@@ -43,9 +45,11 @@ img {
   -webkit-transition: -webkit-transform .8s ease-in-out;
           transition:         transform .8s ease-in-out;
 }
+
 img:hover {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+          transform-origin: 70%;
 }
 
 .bio {
@@ -115,14 +119,9 @@ img:hover {
     color: #1ab7ea;
 }
 
-
 footer {
 	display: flex;
     justify-content: space-between;
     margin: 40px 50px 0px 50px;
     padding: 20px;
-}
-
-.right-container {
-
 }
