@@ -8,39 +8,136 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
+	<section class="right-container">
+		<div id="main-div">
+			<img id="main-image" src="img/idesignstuff2.gif" alt="design hands gif">
+			<div id="maindiv-text">Hello</div>
+		</div>
+		<div id="bio-div">
+			<img id="main-image" src="img/idesignstuff2.gif" alt="design hands gif">
+			<div id="biodiv-text">Coming<br>Soon</div>
+		</div>
+		<div id="work-div">
+			<img id="main-image" src="img/idesignstuff2.gif" alt="design hands gif">
+			<div id="workdiv-text">Work in<br>Progress</div>
+		</div>
+		<div id="skills-div">
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			  <span class="dot" onclick="currentSlide(4)"></span> 
+			  <span class="dot" onclick="currentSlide(5)"></span> 
+			  <span class="dot" onclick="currentSlide(6)"></span>
+			  <span class="dot" onclick="currentSlide(7)"></span> 
+			  <span class="dot" onclick="currentSlide(8)"></span> 
+			  <span class="dot" onclick="currentSlide(9)"></span>
+			</div>
+			<div class="mySlides fade">
+			    <div class="numbertext">1 / 9</div>
+			    <img src="img/skills_none.png" style="width:600px;vertical-align: top;">
+			    <div class="text">I Wear Many Hats</div>
+			</div>
+			<div class="mySlides fade">
+			    <div class="numbertext">2 / 9</div>
+			    <img src="img/skills_beanie.png" style="width:600px;vertical-align: top;">
+			    <div class="text">Creative Thinker - I translate ideas into engaging graphics & think outside-the-box</div>
+			</div>
+			<div class="mySlides fade">
+			    <div class="numbertext">3 / 9</div>
+			    <img src="img/skills_napoleon.png" style="width:600px;vertical-align: top;">
+			    <div class="text">Strategic Thinker - I see big picture without compromising aesthetic details</div>
+			</div>
+			<div class="mySlides fade">
+			    <div class="numbertext">4 / 9</div>
+			    <img src="img/skills_viking.png" style="width:600px;vertical-align: top;">
+			    <div class="text">Project Manager - I conceptualize, plan, develop, & execute projects</div>
+			</div>
+			<div class="mySlides fade">
+			    <div class="numbertext">5 / 9</div>
+			    <img src="img/skills_fedora.png" style="width:600px;vertical-align: top;">
+			    <div class="text">Consultant - Knowledge sharing to communications to technology to design</div>
+			</div>
+			<div class="mySlides fade">
+			    <div class="numbertext">6 / 9</div>
+			    <img src="img/skills_mortarboard.png" style="width:600px;vertical-align: top;">
+			    <div class="text">Lifetime Learner - Hungry for knowledge, I can chew on a myriad of topics</div>
+			</div>
+			<div class="mySlides fade">
+			    <div class="numbertext">7 / 9</div>
+			    <img src="img/skills_baseball.png" style="width:600px;vertical-align: top;">
+			    <div class="text">Team Player - I play well with others, flexible, highly-organized & good-humored</div>
+			</div>
+			<div class="mySlides fade">
+			    <div class="numbertext">8 / 9</div>
+			    <img src="img/skills_construction.png" style="width:600px;vertical-align: top;">
+			    <div class="text">Builder - Adobe Creative Suite, MS Office, Final Cut Pro, HTML, CSS, JavaScript</div>
+			</div>
+			<div class="mySlides fade">
+			    <div class="numbertext">9 / 9</div>
+			    <img src="img/skills_beret.png" style="width:600px;vertical-align: top;">
+			    <div class="text">Fine Artist - Drawing, painting, collage, photography, video editing, graphic design</div>
+			</div>
+			<div>
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		</div>		
+	
+		<div id="blog-div">
+			<img id="main-image" src="img/idesignstuff2.gif" alt="design hands gif">
+			<div id="blogdiv-text">Under<br>Construction</div>
+		</div>
+		<div id="contact-div">
+			<div id="my-form">
+		  		<form action="contact.php">
+		    		<label for="name">Name</label>
+				    <input type="text" id="name" name="Name" placeholder="Your name">
+				    <label for="email">Email</label>
+				    <input type="text" id="email" name="Email" placeholder="Your Email Address">
+				    <label for="message">Message</label>
+				    <textarea id="message" name="message" placeholder="How can I help you?" style="height:200px"></textarea>
+				    <input type="submit" value="Send">
+				</form>
+			</div>
+		</div>
+	</section>
+
 	<section class="left-container">
 	<header>
-		<h1>KELLY<br>BRENNAN</h1>
+		<a id="main-button"</a><h1>KELLY<br>BRENNAN</h1>
 		<h2>brooklyn, ny</h2>
 	</header>
 	<nav>
 		<div class="nav-container">
-			<a href="" class="bio nav-links">BIO <img src="img/pink.svg" alt="bio icon"></a>
+			<a class="bio nav-links" id="bio-button">BIO <img src="img/pink.svg" alt="bio icon"></a>
 		</div>
 		<div class="nav-container">
-			<a href="" class="resume nav-links">RESUME <img src="img/teal.svg" alt="resume icon"></a>
+			<a href="https://drive.google.com/file/d/0B24td6LjQXVHQlNBYmVzVk9sNDA/view?usp=sharing" class="resume nav-links" target="_blank">RESUME <img src="img/teal.svg" alt="resume icon"></a>
 		</div>
 		<div class="nav-container">
-			<a href="" class="work nav-links">WORK <img src="img/red.svg" alt="work icon"></a>
+			<a class="work nav-links" id="work-button">WORK <img src="img/red.svg" alt="work icon"></a>
 		</div>
 		<div class="nav-container">
-			<a href="" class="skills nav-links">SKILLS <img src="img/purple.svg" alt="skills icon"></a>
+			<a class="skills nav-links" id="skills-button">SKILLS <img src="img/purple.svg" alt="skills icon"></a>
 		</div>
 		<div class="nav-container">
-			<a href= "" class="blog nav-links">BLOG <img src="img/green.svg" alt="blog icon"></a>
+			<a class="blog nav-links" id="blog-button">BLOG <img src="img/green.svg" alt="blog icon"></a>
 		</div>
 		<div class="nav-container">
-			<a href="" class="contact nav-links">CONTACT <img src="img/orange.svg" alt="contact icon"></a>
+			<a class="contact nav-links" id="contact-button">CONTACT <img src="img/orange.svg" alt="contact icon"></a>
 		</div>
 	</nav>
 	<footer>
-		<a href="https://www.linkedin.com/in/kabrennan23" class="fa fa-linkedin"></a>
-		<a href="https://www.pinterest.com/snackpacker/" class="fa fa-pinterest"></a>
-		<a href="https://www.instagram.com/snackpacker/" class="fa fa-instagram"></a>
-		<a href="#" class="fa fa-vimeo"></a>
+		<a href="https://www.linkedin.com/in/kabrennan23" class="fa fa-linkedin" target="_blank"></a>
+		<a href="https://www.pinterest.com/snackpacker/" class="fa fa-pinterest" target="_blank"></a>
+		<a href="https://www.instagram.com/snackpacker/" class="fa fa-instagram" target="_blank"></a>
+		<a href="https://vimeo.com/user2740849" class="fa fa-vimeo" target="_blank"></a>
 	</footer>
 	</section>
 	
 	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

@@ -1,38 +1,40 @@
+* {
+	box-sizing:border-box;
+}
 
 body {
 	background-color: white;
 	margin: 0;
-	box-sizing: border-box;
-	/*margin-top: 50px;*/
 }
 
 h1 {
-	font-family: 'Quicksand', sans-serif;
 	color: black;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 50px;
-	text-align: left;
+	margin-bottom: 0px;
 	margin-left: 50px;
 	margin-top: -10px;
-	margin-bottom: 0px;
+	text-align: left;
 }
 
 h2 {
 	color: black;
 	font-family: 'Dosis', sans-serif;
 	font-size: 18px;
-	text-align: left;
-	margin-top: 0px;
 	margin-bottom: 50px;
 	margin-left: 235px;
+	margin-top: 0px;
+	text-align: left;
+}
+
+header a {
+	text-decoration: none;
 }
 
 .nav-links {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 35px;
 	text-align: right;
-	/*margin: 12px;*/
-	padding-left: 200px;
-	/*padding-right: -8px;*/
 	text-decoration: none;
 }
 
@@ -40,7 +42,7 @@ h2 {
     color: black;
 }
 
-img {
+/*img {
   border-radius: 50%;
   -webkit-transition: -webkit-transform .8s ease-in-out;
           transition:         transform .8s ease-in-out;
@@ -50,7 +52,7 @@ img:hover {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
           transform-origin: 70%;
-}
+}*/
 
 .bio {
 	color: #ED3987;
@@ -77,11 +79,14 @@ img:hover {
 }
 
 .left-container {
+	background-color: white;
 	border-right: 5px solid black;
+	box-shadow: 4px 2px 2px lightgrey;
 	height: 100%;
 	padding-top: 50px;
-	position: absolute;
+	position: fixed;
 	top: 0;
+	width: 375px;
 }
 
 .nav-container {
@@ -90,17 +95,15 @@ img:hover {
 	justify-content: flex-end;
 	left: 18px;
     position: relative;
-    right: -20px;
 }
 
 .fa {
     color: gray;
-    padding: 20px;
     font-size: 50px;
-    width: 30px;
     text-align: center;
     text-decoration: none;
     transform: scale(1.75);
+    width: 30px;
 }
 
 .fa-linkedin:hover {
@@ -124,4 +127,188 @@ footer {
     justify-content: space-between;
     margin: 40px 50px 0px 50px;
     padding: 20px;
+}
+
+.right-container {
+	height: 100%;
+	margin: 100px 15px 10px 25px;
+	width: 100%;
+}
+
+#main-image {
+	border: none;
+	vertical-align: top;
+}
+
+#main-div, #bio-div, #work-div, #skills-div, #blog-div, #contact-div {
+	display: none;
+	margin-top: 150px;
+	position: absolute;
+	right: 130px;
+	top: 0;
+}
+
+#main-button, #bio-button, #work-button, #skills-button, #blog-button, #contact-button {
+	cursor: pointer;
+}
+
+#main-div {
+	display: block;
+}
+
+#main-div, #bio-div, #work-div, #blog-div {
+	border: 4px solid black;
+}
+
+#skills-div {
+	background: white;
+	border: 4px solid #65308F;
+  	border-radius: 2px;
+}
+
+#maindiv-text, #biodiv-text, #workdiv-text, #blogdiv-text {
+	color: white;
+	display: block;
+	font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    text-align: center;
+}
+
+#maindiv-text {
+	font-size: 50px;
+	left: 37%;
+    top: 40%;
+}
+
+#biodiv-text {
+	font-size: 40px;
+	left: 35%;
+    top: 37%;
+}
+
+#workdiv-text {
+	font-size: 40px;
+	left: 33%;
+    top: 37%;
+}
+
+#blogdiv-text {
+	font-size: 40px;
+	left: 25%;
+    top: 37%;
+}
+
+.mySlides {
+	display: none;
+}
+
+.prev, .next {
+	border-radius: 0 3px 3px 0;
+	color: #65308F;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: -22px;
+	padding: 16px;
+	position: absolute;
+	top: 28%;
+	transition: 0.6s ease;
+	user-select: none;
+}
+
+.next {
+	border-radius: 3px 0 0 3px;
+	right: 0;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+	color: black;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	width: 610px;
+	text-align: center;
+}
+
+.numbertext {
+	color: black;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 12px;
+	padding: 8px 12px;
+	top: 0;
+}
+
+.dot {
+	background-color: #bbb;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	height: 15px;
+	margin: 0 2px;
+	transition: background-color 0.6s ease;
+	width: 15px;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+#my-form {
+	background-color: white;
+	border: 4px solid #F69322;
+	border-radius: 2px;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px;
+    width: 600px;
+}
+
+input[type=text], select, textarea {
+	border: 3px solid #F69322;
+    border-radius: 2px;
+    box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+    font-size: 16px; 
+    margin-top: 6px;
+    margin-bottom: 16px;
+    padding: 15px;
+    resize: vertical;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+}
+
+input[type=submit] {
+    background-color: #F69322;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    padding: 12px 20px;
 }
